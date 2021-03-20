@@ -1,7 +1,8 @@
 {
   "name": "camsocket",
   "version": "1.0.0",
-  "description": "Push webcam to server using websocket",
+  "description": "Simple websocket server to receive from webcam client",
+  "repository": "https://github.com/darrylcousins/camserver.git",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
