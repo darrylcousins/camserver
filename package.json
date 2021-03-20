@@ -1,0 +1,16 @@
+{
+  "name": "camsocket",
+  "version": "1.0.0",
+  "description": "Push webcam to server using websocket",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Darryl Cousins <darryljcousins@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-webcam": "^0.8.0",
+    "ws": "^7.4.4"
+  }
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Server stats</title>
+    <style>
+      table, td {
+        border: 1px solid #333;
+      }
+
+      thead {
+        background-color: #333;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <image id="cam" />
+    <script>
+      (function() {
+        const cam = document.getElementById('cam');
+        const ws = new WebSocket(`ws://${location.host}/camserver`);
+
+        ws.onmessage = event => {
+          const data = JSON.parse(event.data);
+          cam.src = data;
+        };
+      })();
+    </script>
+  </body>
+</html>
